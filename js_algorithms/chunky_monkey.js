@@ -1,21 +1,13 @@
 function chunkArrayInGroups(arr, size) {
-    
-    let array2D = []
-    
-    let condition = arr.length 
+  var array2D = [];
 
-    for (let start = 0; start <= condition; start = start + size) {
+  for (let start = 0; start < arr.length; start += size) {
+    let newArr = arr.slice(start, start + size);
 
-        for (let end = start + size; end <= condition; end = end + size) {
-
-            let newArr = arr.slice(start, end)
-            
-            array2D.push(newArr)
-        }
-    }
-
-    return array2D;
-
+    array2D.push(newArr);
   }
-  
-  console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+
+  return array2D;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
