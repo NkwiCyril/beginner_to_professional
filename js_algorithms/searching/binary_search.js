@@ -4,7 +4,6 @@ function binarySearch(array, element) {
   let sortedArray = array.sort((a, b) => a - b); // sort the array using the sort() method
   let middleElement = sortedArray[middleIndex]; // get the element in the middle of the sorted array
 
-  console.log(sortedArray); 
   
   if (element == middleElement) { // if the middle element equals the element being searched
     return "element found in middle";
@@ -20,8 +19,10 @@ function binarySearch(array, element) {
         return "element found on the right side.";
       }
     }
-  } else return "Element not found!!"
+  } return "Element not found!!"
 }
 
-console.log(binarySearch([3, 4, 6, 7, 9], 6));
+for (let i = 0; i < 11; i++) {
+  console.log(binarySearch([2,4,6,4,7,8,9,3,6], i));
+}    
  
