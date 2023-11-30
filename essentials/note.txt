@@ -1,5 +1,0 @@
-the following topics will be covered throught out this chapter
-- variables
-- primitive datatypes
-- analysis and modification of datatypes
-- operators
