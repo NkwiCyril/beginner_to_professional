@@ -79,3 +79,7 @@ console.log(firstName);
 
 // SORTING 
 // using the sort() in-built method
+
+let sortMe = [1,7,84,3,5]
+let sortedArray = sortMe.sort((a, b) => a - b)
+console.log(sortMe);
