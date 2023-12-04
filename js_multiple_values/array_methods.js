@@ -106,3 +106,35 @@ console.log(reverseMe);
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 // PRACTICE EXERCISE 3.2
+
+var shoppingList = []; // create empty list
+
+shoppingList.push("Milk", "Bread", "Apples"); // add elements into list
+console.log(shoppingList);
+
+shoppingList.splice(1, 1, "Bananas", "Eggs"); // updating bread with Bananas and Eggs  
+console.log(shoppingList);
+
+let lastItem = shoppingList.pop(); // remove last item and output into the console
+console.log(lastItem);
+
+shoppingList.sort(); // sort the list in alphabetical order
+console.log(shoppingList);
+
+let milkIndex = shoppingList.indexOf("Milk"); // get the index value of milk in the list
+console.log(milkIndex);
+
+shoppingList.splice(1,0,"Carrots", "Lettuce");
+console.log(shoppingList);
+
+var sweetList = ["Juice", "Pop"];
+
+let combinedList = shoppingList.concat(sweetList).concat(sweetList);
+console.log(combinedList);
+
+let lastOfPop = combinedList.lastIndexOf("Pop");
+console.log(lastOfPop);
+
+let finalList = combinedList;
+console.log(finalList);
+
