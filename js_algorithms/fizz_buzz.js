@@ -3,20 +3,26 @@
 // and for the multiples of 5, print "Buzz".
 // For numbers that are multiples of both 3 and 5, print "FizzBuzz".
 
-function fizzBuzz(array) {
-
-  for (let i = 0; i < array.length; i++) {
-
-    if (array[i] % 3 == 0 && array[i] % 5 == 0) { // if number is multiple of 3 and 5
-      array[i] = "FizzBuzz";
-    } else if (array[i] % 3 == 0) { // if number is multiple of 3 
-      array[i] = "Fizz";
-    } else if (array[i] % 5 == 0) {
-      array[i] = "Buzz";
-    }
+function fizzBuzz(num) {
+  if (num % 3 == 0 && num % 5 == 0) {
+    // if number is multiple of 3 and 5, replace with FizzBuzz
+    num = "FizzBuzz";
+  } else if (num % 3 == 0) {
+    // if number is multiple of 3, replace with Fizz
+    num = "Fizz";
+  } else if (num % 5 == 0) {
+    // if multiple of 5, replace with Buzz
+    num = "Buzz";
   }
-
-  return array;
+  return num;
 }
 
-console.log(fizzBuzz([1, 3, 6, 8, 3, 7, 5, 3, 15]));
+for (let i = 1; i <= 100; i++) {
+  // printout all numbers from 1->100 and make necessary replacements as in fizzBuzz()
+  console.log(i + ": " + fizzBuzz(i));
+}
+
+
+function fizzBuzz2(num) {
+  
+}
