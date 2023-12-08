@@ -37,15 +37,38 @@ console.log(obj2.sayHello());
 // Constructors define properties and behaviors instead of returning a value as other functions might.
 
 class Dog {
-    constructor() {
-        this.name = "Django";
-        this.breed = "Full-breed";
-        this.type = "German sherpard";
-        this.age = 20;
-    }
+  constructor() {
+    this.name = "Django";
+    this.breed = "Full-breed";
+    this.type = "German sherpard";
+    this.age = 20;
+  }
 }
 
 let newDog = new Dog();
 let breed = newDog.breed;
 let dogName = newDog.name;
 console.log(breed, dogName);
+
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// PRACTICE 3.4
+
+var myCar = {
+  make: "Toyota",
+  model: "Camry 2021",
+  fuel_type: "gasoline",
+  number_of_seats: 5,
+};
+let propColor = "color";
+myCar[propColor] = "red";
+
+propColor = "forSale";
+myCar[propColor] = true;
+
+console.log("Car made by " + myCar.make + " and model is " + myCar.model);
+
+console.log(myCar);
