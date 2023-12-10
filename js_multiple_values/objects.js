@@ -69,6 +69,8 @@ myCar[propColor] = "red";
 propColor = "forSale";
 myCar[propColor] = true;
 
-console.log("Car made by " + myCar.make + " and model is " + myCar.model);
-
+console.log("Car made by " + myCar.make + " and model is " + myCar.model); // output make and model
+console.log("Car for sale: "  +  myCar.forSale)
 console.log(myCar);
+
+

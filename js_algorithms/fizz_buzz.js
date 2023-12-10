@@ -22,7 +22,16 @@ for (let i = 1; i <= 100; i++) {
   console.log(i + ": " + fizzBuzz(i));
 }
 
+// using ternary conditions
+var fizzBuzz2 = (num) =>
+  num % 3 === 0 && num % 5 == 0
+    ? "FizzBuzz"
+    : num % 3 === 0
+    ? "Fizz"
+    : num % 5 === 0
+    ? "Buzz"
+    : num;
 
-function fizzBuzz2(num) {
-  
-}
+for (let i = 1; i <= 100; i++) 
+  console.log(i + ": " + fizzBuzz2(i));
+
