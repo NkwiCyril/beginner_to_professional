@@ -7,5 +7,7 @@
 			"path": "../../OneDrive/Desktop/blog"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "beginner_to_professional"
+	}
 }

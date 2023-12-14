@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<script>
+    let userAge = prompt("enter your age: ");
+    let message = Number(userAge);
+
+    console.log(userAge);
+
+    let verification =
+        userAge >= 21
+            ? console.log("entry confirmed!\nYou are eligible to purchase alcohol.")
+            : userAge >= 19
+                ? "entry confirmed!\n But you cannot purchase alcohol."
+                : console.log("ENTRY DENIED!");
+
+</script>
+<body>
+
+</body>
+
+</html>
