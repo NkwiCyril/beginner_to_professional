@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>magic8ball.js</title>
+  </head>
+  <script>
+    let response;
+    let randomValue = Math.random() * 6;
+    let ball = Math.floor(randomValue);
+
+    let question = prompt("Ask any question");
+
+    switch (ball) {
+      case 0:
+        response = "sorry. I don't know the answer";
+        break;
+      case 1:
+        response = "hello, try asking google bard";
+        break;
+      case 2:
+        response = "have you asked a classmate already?";
+        break;
+      case 3:
+        response = "chatgpt is not responding at the moment. please try again later.";
+        break;
+      case 4:
+        response = "this question does not exist. (literally)";
+        break;
+      case 5:
+        response = "stack overflow is the place for you right now";
+        break;
+
+      default:
+        response = "please write your question in lowercase."
+        break;
+    }
+
+    console.log(`Question: ${question}\nRespose: ${response}`);
+
+  </script>
+  <body></body>
+</html>
