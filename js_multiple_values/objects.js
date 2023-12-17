@@ -36,6 +36,7 @@ console.log(obj2.sayHello());
 // Inside the constructor, 'this' refers to the new object it will create.
 // Constructors define properties and behaviors instead of returning a value as other functions might.
 
+// creating contructor functions in ES6
 class Dog {
   constructor() {
     this.name = "Django";
@@ -49,6 +50,20 @@ let newDog = new Dog();
 let breed = newDog.breed;
 let dogName = newDog.name;
 console.log(breed, dogName);
+
+// how constructor functions are defined in ES5 
+function House(location, color){
+    this.location = location;
+    this.color = color;
+    this.ringBell = () => {
+    console.log("ding dong!");
+  };
+}
+
+let myHouse = new House("Buea", "white");
+console.log(myHouse.color);
+console.log(myHouse.location);
+myHouse.ringBell();
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -70,8 +85,5 @@ propColor = "forSale";
 myCar[propColor] = true;
 
 console.log("Car made by " + myCar.make + " and model is " + myCar.model); // output make and model
-console.log("Car for sale: "  +  myCar.forSale)
+console.log("Car for sale: " + myCar.forSale);
 console.log(myCar);
-
-
-
