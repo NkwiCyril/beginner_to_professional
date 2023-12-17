@@ -8,6 +8,7 @@ Dog.prototype.numLegs = 4;
 Dog.prototype.breed = "german sherpard"
 
 let beagle = new Dog("Snoopy");
+console.log(beagle.constructor); // logs the constructor of the object beagle
 
 let ownProps = [];
 let prototypeProps = [];
