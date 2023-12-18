@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Game</title>
+  </head>
+  <script>
+    let inputNum = prompt("Enter a whole number: ");
+    let randomNum = Math.floor(Math.random() * inputNum);
+
+    function printNum(inputNum, randomNum) {
+      console.log(`Input: ${inputNum}`);
+      console.log(`System number: ${randomNum}`);
+    }
+
+    if (inputNum === randomNum) {
+      printNum(inputNum, randomNum);
+      console.log("Input is equal to system number");
+    } else if (inputNum > randomNum) {
+      printNum(inputNum, randomNum);
+      console.log("Input is greater than system number");
+    } else if (inputNum < randomNum) {
+      printNum(inputNum, randomNum);
+      console.log();
+    } else {
+      printNum(inputNum, randomNum);
+      console.log("Invalid Input!!");
+    }
+  </script>
+  <body></body>
+</html>
