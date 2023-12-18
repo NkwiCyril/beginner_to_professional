@@ -19,3 +19,5 @@ for (let prop in beagle)
 
 console.log(ownProps);
 console.log(prototypeProps);
+
+
