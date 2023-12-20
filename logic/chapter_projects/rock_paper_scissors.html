@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <script>
+    // R = rock P = paper S = scissors
+    let options = ["R", "P", "S"];
+    let lowOps = options.map((op) => op.toLowerCase());
+    let userOp = prompt("Rock(R) Paper(P) Scissors(S)?").toLowerCase();
+    let randomIndex = Math.floor(Math.random() * 3);
+    let compOp = lowOps[randomIndex];
+
+    var ops = (userOp, compOp) => {
+      console.log("your option: " + userOp.toUpperCase());
+      console.log("computer option: " + compOp.toUpperCase());
+    };
+
+    if (userOp === compOp) {
+      ops(userOp, compOp);
+      console.log("It's a tie");
+    } else if (userOp === "r" && compOp === "p") {
+      ops(userOp, compOp);
+      console.log("Computer wins!!");
+    } else if (userOp === "r" && compOp === "s") {
+      ops(userOp, compOp);
+      console.log("You win!!");
+    } else if (userOp === "p" && compOp === "s") {
+      ops(userOp, compOp);
+      console.log("Computer wins!!");
+    } else if (userOp === "s" && compOp === "p") {
+      ops(userOp, compOp);
+      console.log("You win!!");
+    }else if (userOp === "s" && compOp === "r") {
+      ops(userOp, compOp);
+      console.log("Computer wins!!");
+    } else if (userOp === "p" && compOp === "r") {
+      ops(userOp, compOp);
+      console.log("You win!!");
+    }
+  </script>
+  <body></body>
+</html>
