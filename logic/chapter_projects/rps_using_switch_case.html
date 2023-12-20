@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RPS</title>
+  </head>
+  <script>
+    // R = rock P = paper S = scissors
+    let options = ["R", "P", "S"];
+    let lowOps = options.map((op) => op.toLowerCase());
+    let userOp = prompt("Rock(R) Paper(P) Scissors(S)?").toLowerCase();
+    let randomIndex = Math.floor(Math.random() * 3);
+    let compOp = lowOps[randomIndex];
+
+    var ops = (userOp, compOp) => {
+      console.log("your option: " + userOp.toUpperCase());
+      console.log("computer option: " + compOp.toUpperCase());
+    };
+
+    switch (true) {
+      case userOp === "r" && compOp === "p":
+        ops(userOp, compOp);
+        console.log("Computer wins!");
+        break;
+      case userOp === "r" && compOp === "s":
+        ops(userOp, compOp);
+        console.log("You win!");
+        break;
+      case userOp === "p" && compOp === "s":
+        ops(userOp, compOp);
+        console.log("Computer wins!");
+        break;
+      case userOp === "s" && compOp === "p":
+        ops(userOp, compOp);
+        console.log("You win!");
+        break;
+      case userOp === "s" && compOp === "r":
+        ops(userOp, compOp);
+        console.log("Computer wins!");
+        break;
+      case userOp === "p" && compOp === "r":
+        ops(userOp, compOp);
+        console.log("You win!");
+        break;
+      case userOp === compOp:
+        ops(userOp, compOp);
+        console.log("It's a tie");
+      default:
+        console.log("Invalid input");
+        break;
+    }
+  </script>
+  <body></body>
+</html>
