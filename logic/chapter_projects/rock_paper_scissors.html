@@ -6,37 +6,28 @@
   </head>
   <script>
     // R = rock P = paper S = scissors
-    let options = ["R", "P", "S"];
-    let lowOps = options.map((op) => op.toLowerCase());
-    let userOp = prompt("Rock(R) Paper(P) Scissors(S)?").toLowerCase();
-    let randomIndex = Math.floor(Math.random() * 3);
-    let compOp = lowOps[randomIndex];
+    const options = ["R", "P", "S"];
+    const lowOps = options.map((op) => op.toLowerCase());
+    const userOp = prompt("Rock(R) Paper(P) Scissors(S)?").toLowerCase();
+    const randomIndex = Math.floor(Math.random() * 3);
+    const compOp = lowOps[randomIndex];
 
-    var ops = (userOp, compOp) => {
-      console.log("your option: " + userOp.toUpperCase());
-      console.log("computer option: " + compOp.toUpperCase());
+    const ops = (userOp, compOp) => {
+      console.log("Your option: " + userOp.toUpperCase());
+      console.log("Computer option: " + compOp.toUpperCase());
     };
 
+    ops(userOp, compOp);
+
     if (userOp === compOp) {
-      ops(userOp, compOp);
       console.log("It's a tie");
-    } else if (userOp === "r" && compOp === "p") {
-      ops(userOp, compOp);
+    } else if (
+      (userOp === "r" && compOp === "p") ||
+      (userOp === "p" && compOp === "s") ||
+      (userOp === "s" && compOp === "r")
+    ) {
       console.log("Computer wins!!");
-    } else if (userOp === "r" && compOp === "s") {
-      ops(userOp, compOp);
-      console.log("You win!!");
-    } else if (userOp === "p" && compOp === "s") {
-      ops(userOp, compOp);
-      console.log("Computer wins!!");
-    } else if (userOp === "s" && compOp === "p") {
-      ops(userOp, compOp);
-      console.log("You win!!");
-    }else if (userOp === "s" && compOp === "r") {
-      ops(userOp, compOp);
-      console.log("Computer wins!!");
-    } else if (userOp === "p" && compOp === "r") {
-      ops(userOp, compOp);
+    } else {
       console.log("You win!!");
     }
   </script>
