@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guessing Game</title>
+  </head>
+  <script>
+    // PROJECT 5.1
+
+    const maxNumber = 5;
+    const solution = Math.floor(Math.random() * 4 + 1);
+
+    var userInput;
+
+    while (userInput != solution) {
+      userInput = Number(
+        prompt("Enter a number between 1 and 5".toUpperCase())
+      );
+      if (userInput == solution) {
+        console.log("Your answer: " + userInput);
+        console.log("Computer answer: " + solution);
+        break;
+      } else if (userInput > solution) {
+        console.log("Too high! Guess again.");
+      } else {
+        console.log("Too low! Guess again.");
+      }
+    }
+  </script>
+  <body></body>
+</html>
