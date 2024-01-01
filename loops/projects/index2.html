@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project 5.3</title>
+  </head>
+  <script>
+    var objArray = [];
+    for (let i = 1; i < 11; i++) {
+      var randomNum = Math.floor(Math.random() * 12);
+      let lesson = {
+        name: `Lesson${i}`,
+        status: randomNum % 2 == 0 ? true : false,
+      };
+      objArray.push(lesson);
+    }
+
+    console.log(objArray);
+  </script>
+  <body></body>
+</html>
