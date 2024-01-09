@@ -21,7 +21,7 @@ while (notFound && studentList.length > 0) {
     studentList.shift();
   }
 }
-console.log(studentList);
+console.table(studentList);
 
 // filling an array with the fibonacci sequence
 
@@ -39,3 +39,14 @@ while (fibArray.length < 10) {
 }
 
 console.log(fibArray);
+
+var array = [];
+
+for (let i = 0; i < 4; i++) {
+  array.push([]);
+  for (let j = 0; j < 8; j++) {
+    array[i].push(j);
+  }
+}
+
+console.table(array);
