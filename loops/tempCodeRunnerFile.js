@@ -1,13 +1,12 @@
-let studentList = ["mariah", "doku", "haaland", "grealish", "cyril"];
-var notFound = true;
+var names = ['Nkwi', 'Cyril', 'Akini', 'Miriam', 'Ajong', "Mukete", 'Musoh']
+var newNames = [];
 
-while (notFound && studentList.length > 0) {
-  if (studentList[0] === "grealish") {
-    console.log("student found!");
-    notFound = false;
+for (let i = 0; i < names.length; i++) {
+  if (names[i][0] === 'M' || names[i][0] === 'A')  {
+    delete names[i];
   } else {
-    console.log("student not found");
-    studentList.shift();
+    newNames.push(names[i])
   }
 }
-console.table(studentList);
+
+console.log(newNames);
