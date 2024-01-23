@@ -4,11 +4,11 @@
 
 
 function selectionSort(array) {
-  for (let i = 0; i <= array.length - 1; i++) {
+  for (let i = 0; i <= array.length - 1; i++) { // n - 1
 
     let min = array[i];
     
-    for (j = i; j <= array.length - 1; j++) {
+    for (j = i; j <= array.length - 1; j++) { // n * n - 1 
       if (min > array[j]) {
 
         min = array[j];
