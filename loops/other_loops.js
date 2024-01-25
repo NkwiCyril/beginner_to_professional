@@ -29,3 +29,10 @@ for (let i = 0; i < carKeyArray.length; i++) {
     console.log( carKeyArray[i] + ": " + carValueArray[i] );
 
 }
+
+// create array for each key-value pair in the object placed as input
+var carKeyValue = Object.entries(car); 
+
+for (const [key, value] of carKeyValue ) {
+    console.log(key + ": " + value );
+}
