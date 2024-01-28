@@ -5,3 +5,6 @@ let names = ["john", "maru", "joe", "chris"];
 names.forEach((name) => {
   console.log("Hello " + name[0].toUpperCase() + name.slice(1));
 });
+
+// spread operator to get all names in names list 
+console.log(...names);
