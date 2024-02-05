@@ -1,3 +1,2 @@
-;
-console.log(Lion.name);
-console.log(Lion.type);
+var leopard = Object.create(Animal.prototype);
+console.log(leopard);

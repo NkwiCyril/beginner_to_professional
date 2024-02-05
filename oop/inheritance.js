@@ -1,7 +1,9 @@
-function Animal(name, type, group) {
-  this.name = name;
-  this.type = type;
-  this.group = group;
+class Animal {
+  constructor(name, type, group) {
+    this.name = name;
+    this.type = type;
+    this.group = group;
+  }
 }
 
 // using the the 'new' keyword to create an instance of a constructor function
